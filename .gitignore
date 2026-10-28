@@ -4,3 +4,6 @@
 
 /.vs
 /obj
+/RestaurantManagementSystem/.vs
+/RestaurantManagementSystem/bin/Debug/net10.0
+/RestaurantManagementSystem/obj
