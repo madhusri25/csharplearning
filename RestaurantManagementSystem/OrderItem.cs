@@ -7,7 +7,6 @@ namespace RestaurantManagementSystem
     public class OrderItem
     {
         public int ItemId { get; set; }
-        public  int Quantity { get; set; }
-
+        public int Quantity { get; set; }
     }
 }
