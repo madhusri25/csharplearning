@@ -7,17 +7,23 @@ namespace RestaurantManagementSystem
 {
     public class CustomerOrder
     {
-
-
-
         int orderid;
         public string CustomerName = "";
-        public List<MenuItem> Orderitems = new List<MenuItem>();
+        public List<OrderItem> Orderitems = new List<OrderItem>();
+        /// <summary>
+        /// Prompts the customer for their name and guides them through selecting 
+        /// menu items by ID and entering quantities to build their order list.
+        /// </summary>
+        /// <remarks>
+        /// Validates that the customer name is not blank and does not consist entirely of numbers.
+        /// Continues looping for menu items until an invalid ID or a non-numeric key is entered.
+        /// </remarks>
 
         public void GetOrder()
         {            
             int totaMenuitems = Constants.MenuItems.Count();
             bool isNameValid = false;
+            // Loop until a valid customer name is provided
             while (isNameValid == false)
             {
                 Console.WriteLine("please enter your name");
@@ -39,15 +45,24 @@ namespace RestaurantManagementSystem
             }
 
             Console.WriteLine("\nPlease Enter Menu ID to order , enter any other key exit):");
+            // Loop to accept menu item IDs and quantities from the user
             while (int.TryParse(Console.ReadLine(), out int parsedOrderId) && parsedOrderId != 0 && parsedOrderId <= totaMenuitems)
             {
 
 
                 Console.WriteLine("please enter how many of this item you want to order");
                 int quantity = int.Parse(Console.ReadLine());
+                // Retrieve the matching menu item from the master menu list
+                MenuItem item = Constants.MenuItems
+                    .FirstOrDefault(m => m.ItemId == parsedOrderId);
 
-                MenuItem item = Constants.MenuItems.Where(m => m.ItemId == parsedOrderId).FirstOrDefault();
-                Orderitems.Add(new MenuItem { ItemName = item.ItemName, Price = item.Price, Quantity = quantity });
+                OrderItem orderItemObj = new OrderItem
+                {
+                    ItemId = item.ItemId,
+                    Quantity = quantity
+                };
+
+                Orderitems.Add(orderItemObj);
 
                 Console.WriteLine($"Added {quantity} {item.ItemName} to your order.");
                 Console.WriteLine("\nPlease Enter Menu ID to order more items , enter any other key exit):");

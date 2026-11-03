@@ -12,8 +12,8 @@ namespace RestaurantManagementSystem
             Console.WriteLine("\nBill:");
             foreach (var item in orderedItems)
             {
-                Console.WriteLine($"{item.Quantity} {item.ItemName} : ${ item.Price}");
-                totalAmount += item.Price * item.Quantity;
+               // Console.WriteLine($"{orderItemObj.Quantity} {item.ItemName} : ${ item.Price}");
+               // totalAmount += item.Price * orderItemObj.Quantity;
             }
             Console.WriteLine($"Total Amount: ${totalAmount}");
         }
