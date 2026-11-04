@@ -6,9 +6,10 @@ public class Program
     public static void Main(string[] args)
     {
         MenuService.DisplayMenu();
-        CustomerOrder customerOrderObj = new CustomerOrder();
-        customerOrderObj.GetOrder();        
-        PrintBill.GenerateBill(customerOrderObj.Orderitems);
+       
+        CustomerOrderService customerOrderObj = new CustomerOrderService();        
+        PrintBillService printBillService = new PrintBillService();
+        printBillService.GenerateBill(customerOrderObj.GetOrder());
     }
 
 }
