@@ -8,6 +8,6 @@ namespace RestaurantManagementSystem.Models
     {
         public String CustomerUserName { get; set; } = "";
         public String CustomerPassword { get; set; } = "";
-        public List<String> CustomerType = new List<String>() { "Gold", "Diamond", "Platinum" };
+        public List<String> CustomerType { get; set; } = new List<String>() { "Gold", "Diamond", "Platinum" };
     }
 }
