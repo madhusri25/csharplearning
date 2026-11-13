@@ -34,12 +34,29 @@ namespace RestaurantManagementSystem.Services
                         MenuService.DisplayMenu();
                         return;
                     }
+                   
+                    
+                }
+                foreach (var item in existingCustomers.GetCustomer())
+                {
+                    for (int i = 0; i <= 3; i++)
+                    {
+                        Console.WriteLine("Invalid username or password.");
+                        Console.WriteLine("Please enter your login credentials again:");
+                        Console.Write("Username: ");
+                        item.CustomerUserName = Console.ReadLine();
+                        Console.Write("Password: ");
+                        item.CustomerPassword = Console.ReadLine();
 
-                    Console.WriteLine("Invalid username or password.");
-
-
+                    }
+                    break;
+                    
 
                 }
+                Console.WriteLine("Failed to login. Please try again later.,");
+                Console.WriteLine("Here is the menu:");
+                MenuService.DisplayMenu();
+
             }
             else if (isRegistered == "no")
             {
