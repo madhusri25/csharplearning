@@ -18,6 +18,7 @@ public class UserRegistrationService
         bool hasSpecial = false;
         UserDB userDB = new UserDB();
         UserRegitration userRegitration = new UserRegitration();
+        CustomerDetails customerDetails = new CustomerDetails();
 
         Console.WriteLine("Would you like to register as a new customer? (yes/no)");
         String wantToRegister = Console.ReadLine();
@@ -26,9 +27,25 @@ public class UserRegistrationService
         if (wantToRegister == "yes")
         {
             // Proceed with registration
-            Console.WriteLine("Gold" + " " + "Platinum" + " " + "Diamond");
+            foreach (var type in Enum.GetValues(typeof(CustomerDetails.customerType)))
+            {
+                Console.WriteLine(type);
+            }
+            
+            // Console.WriteLine("""Gold" + " " + "Platinum" + " " + "Diamond");
+
             Console.WriteLine("please select your customer type from the Above list");
             String customerType = Console.ReadLine();
+            foreach (var type in Enum.GetValues(typeof(CustomerDetails.customerType)))
+            {
+                if (customerType!= type)
+                {
+                   Console.WriteLine ("customer type does not exist");
+                }
+                break;
+
+            }
+            
 
             for (int i = 0; i < userRegitration.CustomerType.Count; i++)
             {
@@ -110,7 +127,7 @@ public class UserRegistrationService
             {
                 CustomerUserName = userRegitration.CustomerUserName,
                 CustomerPassword = userRegitration.CustomerPassword,
-                CustomerType = customerType
+                CustomerType = CustomerDetails.customerType.Gold 
             });
 
 
