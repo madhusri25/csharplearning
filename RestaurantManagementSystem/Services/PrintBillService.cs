@@ -27,8 +27,24 @@ namespace RestaurantManagementSystem.Services
                     {
                         if(customer.CustomerUserName == CustomerName)
                         {
+                           if(customer.CustomerType == CustomerDetails.customerType.Gold)
+                            {
+                                totalAmount += (item.Quantity * (menuItem.Price) * (1 - 0.05));
+                            }
+                            else if (customer.CustomerType == CustomerDetails.customerType.Diamond)
+                            {
+                                totalAmount += (item.Quantity * (menuItem.Price) * (1 - 0.1));
+                            }
+                            else if (customer.CustomerType == CustomerDetails.customerType.Platinum)
+                            {
+                                totalAmount += (item.Quantity * (menuItem.Price) * (1 - 0.15));
+                            }
+                            else
+                            {
+                                totalAmount += item.Quantity * menuItem.Price;
+                            }
 
-                            Console.WriteLine($"Welcome, {customer.CustomerUserName}! You are logged in as a {customer.CustomerType} customer.");
+                            //Console.WriteLine($"Welcome, {customer.CustomerUserName}! You are logged in as a {customer.CustomerType} customer.");
                         }
                         
                     }
