@@ -1,0 +1,16 @@
+C:\MyWorkspace\learning\c#\RMS\RMS.Services\bin\Release\net10.0\RMS.Services.deps.json
+C:\MyWorkspace\learning\c#\RMS\RMS.Services\bin\Release\net10.0\RMS.Services.dll
+C:\MyWorkspace\learning\c#\RMS\RMS.Services\bin\Release\net10.0\RMS.Services.pdb
+C:\MyWorkspace\learning\c#\RMS\RMS.Services\bin\Release\net10.0\RMS.Common.dll
+C:\MyWorkspace\learning\c#\RMS\RMS.Services\bin\Release\net10.0\RMS.Common.pdb
+C:\MyWorkspace\learning\c#\RMS\RMS.Services\obj\Release\net10.0\RMS.Services.csproj.AssemblyReference.cache
+C:\MyWorkspace\learning\c#\RMS\RMS.Services\obj\Release\net10.0\RMS.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\MyWorkspace\learning\c#\RMS\RMS.Services\obj\Release\net10.0\RMS.Services.AssemblyInfoInputs.cache
+C:\MyWorkspace\learning\c#\RMS\RMS.Services\obj\Release\net10.0\RMS.Services.AssemblyInfo.cs
+C:\MyWorkspace\learning\c#\RMS\RMS.Services\obj\Release\net10.0\RMS.Services.csproj.CoreCompileInputs.cache
+C:\MyWorkspace\learning\c#\RMS\RMS.Services\obj\Release\net10.0\RMS.Services.sourcelink.json
+C:\MyWorkspace\learning\c#\RMS\RMS.Services\obj\Release\net10.0\RMS.Serv.F4936AA3.Up2Date
+C:\MyWorkspace\learning\c#\RMS\RMS.Services\obj\Release\net10.0\RMS.Services.dll
+C:\MyWorkspace\learning\c#\RMS\RMS.Services\obj\Release\net10.0\refint\RMS.Services.dll
+C:\MyWorkspace\learning\c#\RMS\RMS.Services\obj\Release\net10.0\RMS.Services.pdb
+C:\MyWorkspace\learning\c#\RMS\RMS.Services\obj\Release\net10.0\ref\RMS.Services.dll

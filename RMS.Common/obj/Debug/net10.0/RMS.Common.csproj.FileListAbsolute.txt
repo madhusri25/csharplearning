@@ -1,0 +1,13 @@
+C:\MyWorkspace\learning\c#\RMS\RMS.Common\bin\Debug\net10.0\RMS.Common.deps.json
+C:\MyWorkspace\learning\c#\RMS\RMS.Common\bin\Debug\net10.0\RMS.Common.dll
+C:\MyWorkspace\learning\c#\RMS\RMS.Common\bin\Debug\net10.0\RMS.Common.pdb
+C:\MyWorkspace\learning\c#\RMS\RMS.Common\obj\Debug\net10.0\RMS.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\MyWorkspace\learning\c#\RMS\RMS.Common\obj\Debug\net10.0\RMS.Common.AssemblyInfoInputs.cache
+C:\MyWorkspace\learning\c#\RMS\RMS.Common\obj\Debug\net10.0\RMS.Common.AssemblyInfo.cs
+C:\MyWorkspace\learning\c#\RMS\RMS.Common\obj\Debug\net10.0\RMS.Common.csproj.CoreCompileInputs.cache
+C:\MyWorkspace\learning\c#\RMS\RMS.Common\obj\Debug\net10.0\RMS.Common.sourcelink.json
+C:\MyWorkspace\learning\c#\RMS\RMS.Common\obj\Debug\net10.0\RMS.Common.dll
+C:\MyWorkspace\learning\c#\RMS\RMS.Common\obj\Debug\net10.0\refint\RMS.Common.dll
+C:\MyWorkspace\learning\c#\RMS\RMS.Common\obj\Debug\net10.0\RMS.Common.pdb
+C:\MyWorkspace\learning\c#\RMS\RMS.Common\obj\Debug\net10.0\ref\RMS.Common.dll
+C:\MyWorkspace\learning\c#\RMS\RMS.Common\obj\Debug\net10.0\RMS.Common.csproj.Up2Date
