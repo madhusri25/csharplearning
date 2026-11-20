@@ -2,12 +2,25 @@
 using System.Collections.Generic;
 using System.Text;
 using RestaurantManagementSystem.Models;
+using RMS.Common.Models.Interfaces;
 
 
 namespace RestaurantManagementSystem.Services;
 
-public class CustomerLoginSevice 
+public class CustomerLoginSevice : ICustomerLoginService
 {
+    public LoginResult Login(string userName, string password)
+    {
+        UserDB userDb = new UserDB();
+        bool isSuccessful = userDb.GetCustomer().Any(customer =>
+            customer.CustomerUserName == userName &&
+            customer.CustomerPassword == password);
+
+        return isSuccessful
+            ? new LoginResult(true, "Login successful.")
+            : new LoginResult(false, "Invalid username or password.");
+    }
+
     public void login()
     {
         UserDB existingCustomers = new UserDB();

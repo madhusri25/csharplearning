@@ -1,11 +1,30 @@
 {
   "version": 4,
   "targets": {
-    "net10.0": {}
+    "net10.0": {
+      "RMS.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/RMS.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RMS.Common.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "RMS.Common/1.0.0": {
+      "type": "project",
+      "path": "../RMS.Common/RMS.Common.csproj",
+      "msbuildProject": "../RMS.Common/RMS.Common.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net10.0": []
+    "net10.0": [
+      "RMS.Common >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\User\\.nuget\\packages\\": {},
@@ -39,7 +58,11 @@
         "net10.0": {
           "framework": "net10.0",
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\MyWorkspace\\learning\\c#\\RMS\\RMS.Common\\RMS.Common.csproj": {
+              "projectPath": "C:\\MyWorkspace\\learning\\c#\\RMS\\RMS.Common\\RMS.Common.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
