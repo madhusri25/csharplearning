@@ -1,3 +1,8 @@
 <Solution>
-  <Project Path="RestaurantManagementSystem.csproj" />
+  <Folder Name="/ResturantManagmentSystem/">
+    <Project Path="../RMS.Api/RMS.Api.csproj" Id="4076fe6a-02ab-48dd-b8e0-7601d0fa9ba4" />
+    <Project Path="../RMS.Common/RMS.Common.csproj" Id="a6faba0e-c47f-43e3-88eb-5556800b9cc6" />
+    <Project Path="../RMS.Services/RMS.Services.csproj" Id="59835514-7492-4bf7-8c77-f1b7f13350d5" />
+    <Project Path="RestaurantManagementSystem.csproj" />
+  </Folder>
 </Solution>

@@ -1,14 +1,17 @@
-﻿using RestaurantManagementSystem;
+﻿using RestaurantManagementSystem.Services;
 
 
 public class Program
 {
     public static void Main(string[] args)
     {
-        MenuService.DisplayMenu();
-        CustomerOrder customerOrderObj = new CustomerOrder();
-        customerOrderObj.GetOrder();        
-        PrintBill.GenerateBill(customerOrderObj.Orderitems);
+        CustomerOrderService customerOrderObj = new CustomerOrderService();
+        PrintBillService printBillService = new PrintBillService();
+        CustomerLoginSevice customerLoginSevice = new CustomerLoginSevice();
+        customerLoginSevice.login();
+                          
+                          
+        printBillService.GenerateBill(customerOrderObj.GetOrder());
     }
 
 }
