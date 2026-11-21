@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RMS.Services")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e2db11bf0d4b03c2aa12555c3a375d71d3b58573")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+49fa77eded9450ebb855dd8f318cf4fab2bca50b")]
 [assembly: System.Reflection.AssemblyProductAttribute("RMS.Services")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RMS.Services")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
