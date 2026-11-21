@@ -1,12 +1,35 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
+﻿# Visual Studio and .NET build artifacts
+.vs/
+**/bin/
+**/obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
 
-/.vs
-/obj
-/RestaurantManagementSystem/.vs
-/RestaurantManagementSystem/bin/Debug/net10.0
-/RestaurantManagementSystem/obj
-/RestaurantManagementSystem/Billing.cs
-/RMS.Api/bin/Release/net10.0
-/RMS.Api/obj/Release/net10.0
+# Test and coverage output
+TestResults/
+**/TestResults/
+coverage/
+*.coverage
+*.coveragexml
+
+# Publish and local tooling output
+**/publish/
+artifacts/
+.ionide/
+.idea/
+
+# NuGet and local package caches
+*.nupkg
+*.snupkg
+packages/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Operating system files
+.DS_Store
+Thumbs.db

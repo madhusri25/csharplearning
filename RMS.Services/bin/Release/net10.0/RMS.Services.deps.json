@@ -8,13 +8,13 @@
     ".NETCoreApp,Version=v10.0": {
       "RMS.Services/1.0.0": {
         "dependencies": {
-          "RMS.Common": "1.0.0.0"
+          "RMS.Common": "1.0.0"
         },
         "runtime": {
           "RMS.Services.dll": {}
         }
       },
-      "RMS.Common/1.0.0.0": {
+      "RMS.Common/1.0.0": {
         "runtime": {
           "RMS.Common.dll": {
             "assemblyVersion": "1.0.0.0",
@@ -30,8 +30,8 @@
       "serviceable": false,
       "sha512": ""
     },
-    "RMS.Common/1.0.0.0": {
-      "type": "reference",
+    "RMS.Common/1.0.0": {
+      "type": "project",
       "serviceable": false,
       "sha512": ""
     }
